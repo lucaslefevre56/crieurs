@@ -1,4 +1,6 @@
-    document.addEventListener ("DOMContentLoaded",function() {
+/*
+document.addEventListener ("DOMContentLoaded",function() 
+{
     const track = document.querySelector('.carousel-track');
     const slides = Array.from(track.children);
     const nextButton = document.querySelector('.carousel-button.next');
@@ -21,7 +23,9 @@
         updateSlidePosition();
     });
 });
+*/
 
+/*
 $(document).ready(function(){
 $('.carousel-button.next').on('click', function() {
     console.log('droite')
@@ -33,5 +37,6 @@ console.log('gauche')
 
 
 });
+*/
 
 

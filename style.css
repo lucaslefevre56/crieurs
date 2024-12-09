@@ -1,0 +1,392 @@
+/* /* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* concert-one-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Concert One';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/concert-one-v22-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* carlito-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Carlito';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/carlito-v3-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* convergence-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Convergence';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/convergence-v15-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* eb-garamond-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/eb-garamond-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* <!-- ---------------HEADER------------------ --> */
+
+header {
+    background-color: black;
+    padding: 20px 0;
+    border-bottom: solid 4px #D0A147 ;
+    text-align: center;
+}
+
+.logo {
+    height: 150px;
+    width: 267px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    image-rendering: crisp-edges;
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.logo:hover {
+    filter: brightness(130%); 
+    opacity: 0.9;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #D3D3D3 ;
+    font-family: 'Concert One';
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* <!-- --------------------FOOTER------------------------- --> */
+
+footer {
+    background-color: black;
+    color: #D3D3D3;
+    padding: 15px 0;
+    border-top: solid 4px #D0A147 ;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#container .coordonneeFooter {
+    padding-left: 80px;
+}
+
+#container .coordonneeFooter ul {
+    list-style: none;
+}
+
+#container .coordonneeFooter li {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+#container .coordonneeFooter a {
+    font-family: 'Convergence';
+    padding-left: 10px;
+}
+
+#container .coordonneeFooter a:hover,
+footer .copyrightMentions a:hover {
+    color: white;
+}
+
+#container .coordonneeFooter a,
+footer .copyrightMentions a {
+    color: #D3D3D3;
+    text-decoration: none;
+}
+
+#container .coordonneeFooter i {
+    font-size: 1.5rem;
+}
+
+#container .coordonneeFooter .fa-location-dot {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+#container .reseaux {
+    text-align: right;
+    padding-right: 100px;
+    padding-bottom: 70px;
+}
+
+#container .reseaux h3 {
+    font-family: 'Concert One';
+    font-weight:lighter;
+    padding: 10px 0;
+}
+
+#container .reseaux a { 
+    padding-left: 20px;
+}
+
+#container .reseaux i {
+    font-size: 3rem;
+}
+
+#container .reseaux .fa-square-youtube {
+    color: #FF0000
+}
+
+#container .reseaux .fa-square-youtube:hover {
+    color: #ff5555
+}
+
+#container .reseaux .fa-square-facebook {
+    color: #4245FF;
+}
+
+#container .reseaux .fa-square-facebook:hover {
+    color: #898bff;
+}
+
+#container .reseaux .fa-square-instagram {
+    color: #35D3FF;
+}
+
+#container .reseaux .fa-square-instagram:hover {
+    color: #9eeaff;
+}
+
+footer .copyrightMentions {
+    font-family: 'Concert One';
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer .copyrightMentions a {
+    padding: 0 5px;
+}
+
+/* <!-- --------------------MAIN--------------------- --> */
+
+
+#mainAccueil {
+    background-color: #FFFEEE;
+    font-family: 'Carlito';
+    font-weight: 700;
+    text-align: center;
+    margin: auto;
+    max-width: 100%;
+}
+
+.separator {
+    margin: 20px auto;
+    border: none;
+    background: black;
+    border-radius: 50%;
+    height: 5px;
+    width: 40%;
+    }
+
+      
+#mainAccueil h3 {
+    font-size: 1.5em;
+    padding: 20px 0;
+}
+
+#mainAccueil .textIntro {
+    max-width: 32%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+#photosIntro {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    margin: auto;
+    width: 50%; 
+    max-width: 1200px;  
+    background-color: white;
+    border-radius: 10px;
+    padding:  0 20px;  
+    gap: 20px;  
+}
+
+.photo {
+    width: 100%; 
+    max-height: 88%;
+    border: 4px solid black;
+    border-radius: 10px;
+    box-shadow: 3px 3px black;
+    overflow: hidden;
+    background-color: black;
+    margin: auto;
+}
+
+#photosIntro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+}
+
+/* ----------------------Carousel Visages Troupe----------------------- */
+
+#carouselVisages {
+    position: relative;
+    width: 30%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.carousel-track {
+    display: flex;
+    list-style: none;
+    padding-right: 0px;
+}
+
+.carousel-slide {
+    position: relative;
+    min-width: 100%;
+    width: 100%; 
+    max-height: 90%;
+    margin: auto;
+    padding: 0 10px;
+}
+
+.carousel-slide img, 
+.carousel-slide .current-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    border: 4px solid black;
+    border-radius: 10px;
+    box-shadow: 3px 3px black;
+    background-color: black;
+}
+
+.carousel-caption1, .carousel-caption2 {
+    font-family: 'Carlito';
+    font-weight: lighter;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.carousel-caption1 {
+    font-size: 1.5rem;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    width :40px ;
+    height: 40px;
+    background-color: white;
+    border: solid 3px black;
+    border-radius: 50%;
+    box-shadow: 2px 2px black;
+    padding: 10px;
+    cursor: pointer;
+    transform: translateY(-150%);
+    z-index: 1;
+}
+
+.carousel-button:hover {
+    background-color: rgb(226, 226, 226);
+}
+
+.carousel-button.prev { 
+    left: 20px; 
+}
+
+.carousel-button.next { 
+    right: 20px; 
+}
+
+.visuallyhidden {
+    position: absolute; 
+    width: 1px;        
+    height: 1px;      
+    margin: -1px;      
+    padding: 0;        
+    overflow: hidden;   
+    clip: rect(0, 0, 0, 0); 
+    border: 0;        
+}
+
+/* --------------------------Articles Spectacles & Ateliers---------------------- */
+
+#spectacleAteliers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 50px auto;
+    width: 52%; 
+    gap: 20px;
+}
+
+#spectacleAteliers .decouverte {
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black ;
+    border-radius: 15px ;
+  
+}
+
+#spectacleAteliers .decouverte h1 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+#spectacleAteliers .decouverte p {
+    font-weight: lighter;
+    font-size: 1.1rem;
+    padding: 10px 0 25px 0;
+}
+
+#spectacleAteliers .decouverte a {
+    text-decoration: none;
+    color: white;
+}
+
+#spectacleAteliers .decouverte button {
+    font-family: 'Concert One';
+    background-color: #FF0808;
+    /* font-weight: bold; */
+    font-size: 1.2rem;
+    padding: 10px;
+    border: 2px solid black;
+    box-shadow: 0 3px black;
+    border-radius: 25px;
+}
+
+#spectacleAteliers .decouverte button:hover {
+    background-color: #ff5959;
+} 

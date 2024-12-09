@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil crieurs</title>
+    <meta name="description" content="Découvrez l'univers captivant de notre troupe de théâtre, où passion, créativité et émotions se rencontrent sur scène. Explorez nos spectacles, nos acteurs et notre histoire.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="jquery-3.7.1.min.js"></script> -->
+    <script src="carousel.js"></script>
+
+</head>
+
+<body>
+
+    <!-- ---------------HEADER------------------ -->
+
+    <header>
+        <a href="index.html"><img src="images-site-theatre/logo crieurs de boucan.png" alt="logo" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="spectacles.html">Spectacles / Billetterie</a></li>
+                <li><a href="ateliers.html">Ateliers</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="actualités.html">Actualités</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- --------------------MAIN--------------------- -->
+
+ <main id="mainAccueil">
+    <h3 class="titreIntro">Entrez dans la Lumière</h3>
+        <p class="textIntro">
+            Bienvenue chez Les Crieurs de Boucan, une compagnie de théâtre où chaque représentation 
+            est une fenêtre ouverte sur des univers empreints de mystère et d’élégance. 
+            Portée par une passion pour les récits intemporels et les atmosphères envoûtantes.<br>
+            Ensemble, célébrons l’art dramatique dans toute sa splendeur !
+        </p>
+
+        <section id="photosIntro">
+            <figure class="photo"><img src="images-site-theatre/papy.jpg" alt="papy"></figure>
+            <figure class="photo"><img src="images-site-theatre/clown.jpg" alt="clown"></figure>
+            <figure class="photo"><img src="images-site-theatre/suspicious.jpg" alt="suspicious"></figure>
+        </section>
+
+        <hr class="separator">
+
+<!-- ----------------------------Carousel Visages--------------------------- -->
+        <h3 class="titreVisages">Les Visages de la Troupe</h3>
+
+        <section id="carouselVisages" aria-labelledby="carouselheading">
+            <h3 id="carouselheading" class="visuallyhidden">Carrousel d'images</h3>
+            <button class="carousel-button prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <div class="carousel-track-container">
+                <ul class="carousel-track">
+                    <li class="carousel-slide current-slide">
+                        <img src="images-site-theatre/JeanPat.jpg" alt="Jean Patrice Benjamin">
+                        <p class="carousel-caption1">Jean-Patrice Benjamin</p>
+                        <p class="carousel-caption2">Metteur en scène</p>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="images-site-theatre/Carole.jpg" alt="Carole Gallet">
+                        <p class="carousel-caption1">Carole Gallet</9>
+                        <p class="carousel-caption2">Comédienne & coach adultes</9>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="images-site-theatre/Anne.jpg" alt="Anne Peuprès">
+                        <p class="carousel-caption1">Anne Peuprès</p>
+                        <p class="carousel-caption2">Comédienne & coach enfants/ados</p>
+                    </li>
+                </ul>
+            </div>
+            <button class="carousel-button next"><i class="fa-solid fa-arrow-right"></i></button>
+        </section>
+
+        <hr class="separator">
+
+<!-- ---------------------- Articles sepctacles et Ateliers------------------- -->
+
+        <section id="spectacleAteliers">
+            <article class="decouverte">
+                <h1 class="spectacles">Plongez avec nous dans la scène !!</h1>
+                <p>Venez découvrir notre compagnie de théâtre, où chaque représentation 
+                    est un voyage dans le temps, rempli de drame, de comédie et de folie !</p>
+                    <a href="spectacles.html"><button class="boutonSpectacles">Découvrez nos spectacles</a></button>
+            </article>
+            <article class="decouverte">
+                <h1 class="spectacles">Ateliers enfants / adultes</h1>
+                <p>Que vous soyez enfant ou adulte, nos ateliers sont conçus pour éveiller 
+                    la créativité, renforcer la confiance en soi et explorer l’art de la 
+                    scène dans une ambiance ludique et bienveillante ! =)</p>
+                <a href="ateliers.html"><button class="boutonAteliers">Ateliers et tarifs</a></button>
+            </article>
+        </section>
+
+        <hr class="separator">
+
+<!-- --------------------------Carousel Actualités--------------------- -->
+
+<h1 class="actuality">Actualités</h1>
+
+
+ </main>
+
+<!-- --------------------FOOTER------------------------- -->
+
+    <footer>
+        
+    <section id="container">
+            <article class="coordonneeFooter">
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i><a href="#">06 60 57 29 26</a></li>
+                    <li><i class="fa-solid fa-envelope"></i><a href="#">lescrieursdeboucan@gmail.com</a></li>
+                    <li><i class="fa-solid fa-location-dot"></i>
+                        <a href="#">
+                        1 place de la mairie <br>
+                        56130 Camoël
+                        </a>
+                    </li>
+                </ul>
+            </article>
+        
+
+        <article class="logo">
+        <a href="index.html"><img src="images-site-theatre/logo crieurs de boucan.png" alt="logo" class="logo">
+        </a>
+        </article>
+
+        <article class="reseaux">
+                <h3>RETROUVEZ NOUS SUR</h3>
+            <div class="iconesReseaux"><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-square-youtube"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>       
+            </article>
+    </section>
+
+        <div class="copyrightMentions">
+            <p>© Copyright 2024 Compagnie LES CRIEURS DE BOUCAN | Tous droit réservés. | </p>
+            <a href="mentions légales.html">Mentions Légales</a>
+            <p> | </p>
+            <a href="politiques.html">Politique de Confidentialité</a>
+        </div>
+
+    </footer>
+
+</body>
+</html>
+
